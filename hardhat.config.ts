@@ -25,14 +25,14 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 const config: HardhatUserConfig = {
   networks: {
     rinkeby: {
-      url: "https://eth-rinkeby.alchemyapi.io/v2/o_zAh4cbCDp2Um2CJ_vgyOmShc8kf11A",
-      accounts: ["c7ab830449fad13247925625e832a0847957accd76eb438de4dc30581e01aa47"],
+      url: process.env.STAGING_QUICKNODE_KEY,
+      accounts: ["process.env.PRIVATE_KEY"],
     },
   },
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: "7U4M61C8APPBTGPFTP799XRXU9DIZ9VJDU",
+    apiKey: process.env.ETHERSCAN_API_KEY,
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
