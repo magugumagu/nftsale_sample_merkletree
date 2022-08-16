@@ -26,7 +26,7 @@ const config: HardhatUserConfig = {
   networks: {
     rinkeby: {
       url: process.env.STAGING_QUICKNODE_KEY,
-      accounts: ["process.env.PRIVATE_KEY"],
+      accounts: ["c7ab830449fad13247925625e832a0847957accd76eb438de4dc30581e01aa47"],
     },
   },
   etherscan: {

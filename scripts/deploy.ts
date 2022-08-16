@@ -6,11 +6,11 @@
 import { ethers } from "hardhat";
 import "@nomiclabs/hardhat-etherscan";
 const main = async () => {
-  const nftContractFactory = await ethers.getContractFactory('SPAMDAO');
+  const nftContractFactory = await ethers.getContractFactory('TESTNFT');
   const nftContract = await nftContractFactory.deploy(
-      "SPAMDAO NFT",
-      "SPAM",
-      "https://ipfs.io/ipfs/QmeRWEBMTSdt1dTJK4c2wdoGLD8suuHSUM8un2qabBfZDn/",
+      "TEST NFT",
+      "TEST",
+      "https://ipfs.io/ipfs/QmeRWEBMTSdt1dTJK4c2wdoGLD8suuHSUM8un2qabBfZDn",
       "https://ipfs.io/ipfs/QmeRWEBMTSdt1dTJK4c2wdoGLD8suuHSUM8un2qabBfZDn/notRevealed.json"
   );
   //
@@ -40,3 +40,5 @@ const runMain = async () => {
 };
 
 runMain();
+
+//0x510C204E369199EF86644210DAd0537aE324255b

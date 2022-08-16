@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 
-contract SPAMDAO is ERC721Enumerable, Ownable {
+contract TESTNFT is ERC721Enumerable, Ownable {
   using Strings for uint256;
     
   string public baseURI;
